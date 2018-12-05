@@ -1,3 +1,3 @@
 # skyusuf15.github.io
 
-Sanusi Yusuf Korede portfolio
+Sanusi Yusuf Korede's portfolio
