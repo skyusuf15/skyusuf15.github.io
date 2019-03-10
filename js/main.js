@@ -67,7 +67,7 @@ $(window).on('load', function() {
 		TYPED JS
 	--------------------*/
 	$(".element").typed({
-		strings: ["I'm Yusuf Korede, Sanusi.", "a Flexible Software Developer,", "And a Web Developer,", "From Lagos."],
+		strings: ["I'm Yusuf Korede, Sanusi.", "a Flexible Software/Web Developer,", "From Lagos."],
 		typeSpeed: 10,
 		loop:true,
 		backDelay: 2000
@@ -87,7 +87,7 @@ $(window).on('load', function() {
 	/*------------------
 		PROGRESS BAR
 	--------------------*/
-	$('.progress-bar-style').each(function() {
+	$('.progress-bar-style').each(function() {jQuery
 		var progress = $(this).data("progress");
 		var prog_width = progress + '%';
 		if (progress <= 100) {

@@ -93,7 +93,7 @@
 							Asides earning a degree in Computer Science, I have a couples of more programming
 							certificate, see <a href="#certificate"> below </a>. I have also built several web based
 							products, and maintained several CRM Applications for different companies.
-							<!-- like <a href="http://www.raumplusng.com/manager" target="_blank">Raumplus Nigeria</a>, <a href="http://manager.bangandolufsenng.com" target="_blank">Bang&Olufsen</a>, <a href="https://www.suthman.com" target="_blank">Suthman Realty Limited</a> and so on.-->
+							<!-- like <a href="http://www.raumplusng.com/manager" target="_blank">Raumplus Nigeria</a>, <a href="http://manager.bangandolufsenng.com" target="_blank">Bang&Olufsen</a>, <a href="https://www.suthman.com" target="_blank">Suthman Realty Limited</a> and so on. -->
 						</p>
 
 						<p><b>Current Employer: <a href="https://otandtconsulting.com"> OAK Telecoms and Technology
@@ -119,24 +119,24 @@
 						<!-- Skill item -->
 						<div class="single-progress-item">
 							<p>SQL</p>
-							<div class="progress-bar-style" data-progress="90"></div>
+							<div class="progress-bar-style" data-progress="80"></div>
 						</div>
 						<!-- Skill item -->
 						<div class="single-progress-item">
 							<p>UX Design</p>
-							<div class="progress-bar-style" data-progress="71"></div>
+							<div class="progress-bar-style" data-progress="75"></div>
 						</div>
 
 						<!-- Skill item -->
 						<div class="single-progress-item">
 							<p>Java</p>
-							<div class="progress-bar-style" data-progress="70"></div>
+							<div class="progress-bar-style" data-progress="65"></div>
 						</div>
 
 						<!-- Skill item -->
 						<div class="single-progress-item">
 							<p>Python (Data Science)</p>
-							<div class="progress-bar-style" data-progress="70"></div>
+							<div class="progress-bar-style" data-progress="60"></div>
 						</div>
 
 						<!-- Skill item -->
@@ -323,9 +323,7 @@
 	<!-- ==== Footer Section Start ==== -->
 	<footer class="footer-section fix">
 		<div class="container">
-			<p style="font-weight: 400">Concept by <b>Yusuf Odukoya</b></p>
-			<p style="font-weight: 400">Redesign by <b>Sanusi Yusuf Korede</b></p>
-			<p style="font-weight: 400">Copyright © 2018, All rights Reserved.</p>
+			<p style="font-weight: 400">Copyright © <span id="CopyrightYear"></span> , All rights Reserved.</p>
 			<p>Hosted with <span style="color: #e25555;">&#9829;</span> by <b>GitHub</b></p>
 		</div>
 	</footer>
@@ -337,6 +335,11 @@
 	<script src="js/plugin.js"></script>
 	<script src="js/init-round.js"></script>
 	<script src="js/main.js"></script>
+	<script> 
+		var date = new Date;
+		date.getFullYear();
+		$("#CopyrightYear").text(date.getFullYear());
+	</script>
 </body>
 
 </html>
