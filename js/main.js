@@ -6,28 +6,6 @@ $(window).on('load', function() {
 	--------------------*/
 	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
-
-
-	/*------------------
-		Isotope Filter
-	--------------------*/
-	let $container = $('.isotope_items');
-	$container.isotope();
-
-	$('.portfolio-filter li').on("click", function(){
-		$(".portfolio-filter li").removeClass("active");
-		$(this).addClass("active");				 
-		let selector = $(this).attr('data-filter');
-		$(".isotope_items").isotope({
-				filter: selector,
-				animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false,
-			}
-		});
-		return false;
-	});
 });
 
 
@@ -37,7 +15,7 @@ $(window).on('load', function() {
 	/*------------------
   		HEADER
   	--------------------*/
-	var navMenu = $('.menu-list')
+	let navMenu = $('.menu-list');
 		navMenu.onePageNav();
 	$(window).on('scroll resize',function(e) {
 		if ($(this).scrollTop() > 70) {
@@ -61,23 +39,14 @@ $(window).on('load', function() {
 		}
 	});
 
-
-
 	/*------------------
 		TYPED JS
 	--------------------*/
 	$(".element").typed({
-		strings: ["I'm Yusuf Korede, Sanusi.", "a Flexible Software Engineer/Backend Engineer,", "Based in Ogun State, Nigeria."],
+		strings: ["I'm Yusuf Korede, Sanusi.", "a Software Engineer/Backend Engineer,", "Based in Ogun State, Nigeria."],
 		typeSpeed: 10,
 		loop:true,
 		backDelay: 2000
 	});
-
-
-	/*------------------
-		WOW JS
-	--------------------*/
-	new WOW().init();
-
 
 })(jQuery);
