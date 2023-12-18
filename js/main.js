@@ -43,7 +43,7 @@ $(window).on('load', function() {
 		TYPED JS
 	--------------------*/
 	$(".element").typed({
-		strings: ["I'm Yusuf Korede, Sanusi.", "a Software Engineer/Backend Engineer,", "Based in Ogun State, Nigeria."],
+		strings: ["I'm Yusuf Korede, Sanusi.", "a Senior Software Engineer/Senior Backend Engineer,", "Based in Ogun State, Nigeria."],
 		typeSpeed: 10,
 		loop:true,
 		backDelay: 2000
